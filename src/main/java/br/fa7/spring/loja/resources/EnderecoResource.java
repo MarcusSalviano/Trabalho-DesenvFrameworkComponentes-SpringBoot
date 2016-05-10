@@ -64,7 +64,7 @@ public class EnderecoResource {
 	}
 	
 	@DELETE
-	@Path("{id}")
+	@Path("{eid}")
 	public Response remove(@PathParam("id") Long id, @PathParam("eid") Long eid){
 		try {
 			enderecoService.remove(eid);
